@@ -31,8 +31,8 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
         $web="";
     }
     else{
-        $website=testing($_POST['website']);
-        if(!filter_var($email,FILTER_VALIDATE_URL)){
+        $web=testing($_POST['website']);
+        if(!filter_var($web,FILTER_VALIDATE_URL)){
         $websiteerror="Invalid Website Name";
     }
 }
@@ -62,7 +62,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
              WEBSITE: <input type="text" name="website"></input><br>
             <span class="error"><?php echo $websiteerror ?></span><br><br>
              COMMENT: <textarea name="comment" rows="5" cols="15"></textarea><br><br>
-             COURSE: <input type="radio" name="cource" value="BCA">BCA</input>
+             COURSE: <input type="radio" name="course" value="BCA">BCA</input>
              <input type="radio" name="course" value="BBA">BBA</input><br>
              <span class="error">*<?php echo $courseerror ?></span><br><br>
              <input type="submit" name="submit" value="SUBMIT">
