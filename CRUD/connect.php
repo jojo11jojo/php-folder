@@ -5,7 +5,7 @@ $pass="";
 $db="gim";
 $con=mysqli_connect($host,$user,$pass,$db);
 if($con){
-    echo "Connection Successfully";
+    echo "Connection Successfully Done";
 }
 else{
     die("Connection Failed".mysqli_connect_error($con));
