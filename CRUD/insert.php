@@ -1,18 +1,19 @@
 <?php
 include 'connect.php';
 if (isset($_POST['submit'])) {
-  $a = $_POST['name'];
+  $a = $_POST['nam'];
   $b = $_POST['mobile'];
   $c = $_POST['email'];
   $d = $_POST['password'];
 
   // Always quote your SQL query string
-  $sql = "INSERT INTO `student` (`id`, `name`,`mob`, `email`,`pass`)  VALUES (NULL,'$a', '$b', $c, '$d')";
-  $r = mysqli_query($con, $sql);
-  if ($r) {
-    echo "Record inserted successfully!";
-  } else {
-    echo "Error: " . mysqli_error($con);
+$sql = "INSERT INTO student (id, name, mob, email, pass) VALUES (NULL, '$a', '$b', '$c', '$d')";
+  $result=mysqli_query($con,$sql);
+  if ($result==true) {
+    echo "<br><br>Sign up Successfully Occured";
+  }
+   else {
+    echo "Error: ";
   }
 }
 
@@ -31,7 +32,7 @@ if (isset($_POST['submit'])) {
     <form method="post">
          <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">Name</label>
-    <input type="name" name="name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <input type="name" name="nam" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
     <div id="emailHelp" class="form-text"></div>
   </div>
    <div class="mb-3">
