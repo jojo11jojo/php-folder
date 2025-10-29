@@ -1,6 +1,5 @@
 <?php
 include 'connect.php';
-include 'insert.php';
 ?>
 
 <!DOCTYPE html>
@@ -16,15 +15,6 @@ include 'insert.php';
     <ul class="nav nav-pills nav-fill">
   <li class="nav-item">
     <a class="nav-link" aria-current="page" href="insert.php">Dashbord</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#">Update</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#">Delete</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="display.php" tabindex="-1" aria-disabled="true">Basic Details</a>
   </li>
 </ul>
     <form method="post">
