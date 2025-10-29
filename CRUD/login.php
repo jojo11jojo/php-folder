@@ -1,16 +1,7 @@
 <?php
 include 'connect.php';
+include 'insert.php';
 ?>
-<?php
- if(isset($_POST['submit'])){
-    
- }
-   
- 
-$con->close();
-?>
-
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -26,7 +17,15 @@ $con->close();
   <li class="nav-item">
     <a class="nav-link" aria-current="page" href="insert.php">Dashbord</a>
   </li>
-
+  <li class="nav-item">
+    <a class="nav-link" href="#">Update</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Delete</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="display.php" tabindex="-1" aria-disabled="true">Basic Details</a>
+  </li>
 </ul>
     <form method="post">
   <div class="mb-3">
