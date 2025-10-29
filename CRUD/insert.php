@@ -1,5 +1,6 @@
 <?php
 include 'connect.php';
+include 'navbar.php';
 if (isset($_POST['submit'])) {
   $a = $_POST['nam'];
   $b = $_POST['mobile'];
