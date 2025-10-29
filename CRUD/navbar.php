@@ -13,7 +13,7 @@
     <a class="nav-link" aria-current="page" href="insert.php">Sign up</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" aria-current="page" href="#">Login</a>
+    <a class="nav-link" aria-current="page" href="login.php">Login</a>
   </li>
   <li class="nav-item">
     <a class="nav-link" href="#">Update</a>
@@ -21,9 +21,7 @@
   <li class="nav-item">
     <a class="nav-link" href="#">Delete</a>
   </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Display</a>
-  </li>
+ 
 </ul>
     
 </body>
