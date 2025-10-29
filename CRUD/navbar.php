@@ -21,6 +21,9 @@
   <li class="nav-item">
     <a class="nav-link" href="#">Delete</a>
   </li>
+  <li class="nav-item">
+    <a class="nav-link" href="display.php">Display</a>
+  </li>
  
 </ul>
     
