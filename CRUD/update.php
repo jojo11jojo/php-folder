@@ -3,7 +3,7 @@ include "connect.php";
 include "navbar.php";
 ?>
  <?php
- $row['name']=$row['mob']=$row['email']=$row['pass']="";
+ $row['name']=$row['mob']=$row['email']=$row['pass']= $row['id']="";
   if (isset($_POST['submit1'])){
     $i=$_POST['id1'];
     echo $i;
@@ -15,12 +15,16 @@ include "navbar.php";
 ?>
 <?php
 if(isset($_POST['submit2'])){
+    $id11=$_POST['id2'];
      $n = $_POST['nam'];
   $m = $_POST['mobile'];
   $e = $_POST['email'];
   $p = $_POST['password'];
-  $sql12="UPDATE `student` SET `name`=`$n`,`mob`=$m,`email`=$e,`pass`=$p where `student`.`id`=2 ";
+  $sql12="UPDATE `student` SET `name`='$n',`mob`='$m',`email`='$e',`pass`='$p' where `student`.`id`='$id11' ";
   $result12=mysqli_query($con,$sql12);
+  if($result12){
+echo "Updated";
+  }
 
 }
 ?>
@@ -45,6 +49,8 @@ if(isset($_POST['submit2'])){
     </div>   
    
     <form method="post" >
+        <input type="hidden" name="id2" value="<?php echo $row['id']; ?>" >
+
          <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">Name</label>
     <input type="name" name="nam"  value="<?php  echo $row['name']; ?>" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
