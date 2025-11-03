@@ -70,7 +70,7 @@ if(isset($_POST['submit2'])){
     <label for="exampleInputPassword1" class="form-label">Password</label>
     <input type=" " name="password"  value="<?php  echo $row['pass']; ?>" class="form-control" id="exampleInputPassword1">
   </div>
-  <button type="submit" name="submit2"  style="justify-content: center; width:100%;"class="btn btn-primary">Update</button>
+  <button type="submit" name="submit2"  style="justify-content: center; width:100%;"class="btn btn-primary">DELETE</button>
 </form>
 </div>
 </body>

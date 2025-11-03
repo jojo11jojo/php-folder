@@ -16,7 +16,7 @@
     <a class="nav-link" href="update.php">Update</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="#">Delete</a>
+    <a class="nav-link" href="delete.php">Delete</a>
   </li>
   <li class="nav-item">
     <a class="nav-link" href="read.php">Read</a>
