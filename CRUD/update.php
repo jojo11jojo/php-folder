@@ -40,17 +40,17 @@ if(isset($_POST['submit2'])){
 
 </head>
 <body>
-    <div >
-        <form method="post"  >
-  <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Enter ID No: </label>
-    <input type="number" name="id1" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <div style="display: flex; justify-content: center; align-items: center; height: 20vh;">
+        <form method="post" style="display: flex; align-items: center; gap: 15px; "  >
+  <div class="mb-3" style="display: flex; align-items: center; gap: 10px; ">
+    <label for="exampleInputEmail1" class="form-label"style="margin: 0;">Enter ID No: </label>
+    <input type="number" name="id1" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" style="width: 200px;">
   </div>
-  <button type="submit" name="submit1" class="btn btn-primary">Search</button>
+  <button type="submit" name="submit1" style="hight:10vh;" class="btn btn-primary">Search</button>
 </form>
     </div>   
-   
-    <form method="post" >
+   <div style=" display: flex; justify-content: center; width: 100%; align-items: center; height: 60vh;">
+    <form method="post" style="width: 400px; padding: 20px; border: 1px solid #ccc; border-radius: 10px; background-color: #f9f9f9;">
         <input type="hidden" name="id2" value="<?php echo $row['id']; ?>" >
 
          <div class="mb-3">
@@ -70,7 +70,8 @@ if(isset($_POST['submit2'])){
     <label for="exampleInputPassword1" class="form-label">Password</label>
     <input type=" " name="password"  value="<?php  echo $row['pass']; ?>" class="form-control" id="exampleInputPassword1">
   </div>
-  <button type="submit" name="submit2" class="btn btn-primary">Update</button>
+  <button type="submit" name="submit2"  style="justify-content: center; width:100%;"class="btn btn-primary">Update</button>
 </form>
+</div>
 </body>
 </html>
