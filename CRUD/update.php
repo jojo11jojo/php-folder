@@ -3,7 +3,7 @@ include "connect.php";
 include "navbar.php";
 ?>
  <?php
- $row['name']=$row['mob']=$row['email']=$row['pass']= $row['id']="";
+ $row['name']=$row['mob']=$row['email']=$row['pass']= $row['id']=".......................";
   if (isset($_POST['submit1'])){
     $i=$_POST['id1'];
     echo $i;
@@ -11,6 +11,8 @@ include "navbar.php";
     $result11=mysqli_query($con,$sql11);
     $row=mysqli_fetch_assoc($result11);
   }
+ 
+
 
 ?>
 <?php
@@ -23,7 +25,7 @@ if(isset($_POST['submit2'])){
   $sql12="UPDATE `student` SET `name`='$n',`mob`='$m',`email`='$e',`pass`='$p' where `student`.`id`='$id11' ";
   $result12=mysqli_query($con,$sql12);
   if($result12){
-echo "Updated";
+ header("location:read.php");
   }
 
 }
